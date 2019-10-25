@@ -10,8 +10,7 @@ export default class BearLocation extends LightningElement {
 	@track name;
 	@track mapMarkers = [];
 	@wire(getRecord, { recordId: '$recordId', fields })
-    
-    loadBear({ error, data }) {
+	loadBear({ error, data }) {
 		if (error) {
 			// TODO: handle error
 		} else if (data) {
@@ -26,8 +25,7 @@ export default class BearLocation extends LightningElement {
 				description: `Coords: ${Latitude}, ${Longitude}`
 			}];
 		}
-    }
-    
+	}
 	get cardTitle() {
 		return (this.name) ? `${this.name}'s location` : 'Bear location';
 	}
