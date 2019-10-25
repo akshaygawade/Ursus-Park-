@@ -27,6 +27,6 @@ export default class BearLocation extends LightningElement {
 		}
 	}
 	get cardTitle() {
-		return (this.name) ? `${this.name}'s location` : 'Bear location';
+		return (this.name) ? `${this.name}'s location` : 'Bear Location';
 	}
 }
